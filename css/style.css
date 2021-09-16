@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.green{
+    height: 400px;
+    width: 700px;
+    background-color: green;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.red{
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.parent{
+    height: 400px;
+    width: 700px;
+    background-color: tomato; 
+    position: relative;
+}
+
+.child{
+    height: 200px;
+    width: 200px;
+    background-color: indigo;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+}
+.menu{
+ text-align: center;
+    background-color: teal;
+}
+
+.menu ul{
+    display: inline-flex;
+}
+.menu ul li{
+    height: 50px;
+    width: 120px;
+    line-height: 50px;
+    position: relative;
+}
+.menu ul li:hover{
+    background-color: indigo;
+}
+
+.menu ul li a{
+    display: block;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.menu ul li a:focus{
+    background-color: indigo;
+    color: red;
+}
+.menu ul li a:hover{
+/*    font-size: 22px;*/
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+.menu ul li:hover .dropdown{
+    display: block;
+}
+
+.menu ul li:hover .dropdown ul{
+    display: block;
+    background-color: teal;
+}
+.sub{
+    position: relative;
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 120px;
+    
+}
+.submenu ul{
+    background-color: magenta !important;
+}
+.sub:hover .submenu{
+    display: block;
+    
+}
+.heading h1{
+    font-size: 300px;
+    
+}
+.t2 h2{
+    font-size: 200px;
+    background-color: teal;
+}
